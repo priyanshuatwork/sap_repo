@@ -22,6 +22,10 @@
                         <custom:MyButton
                             id="btnLibrary"
                             customText="From Library" />
+                            <Button 
+                                text="Validate"
+                                type="Emphasized"
+                                press="onValidate" />
                     </VBox>
                 </content>
             </Page>
