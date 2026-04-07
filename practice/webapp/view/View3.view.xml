@@ -1,0 +1,24 @@
+<mvc:View
+    controllerName="demo.extend.practice.controller.View3"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:custom="demo.extend.practice.control"
+    displayBlock="true">
+
+    <App id="app1">
+        <pages>
+            <Page id="page1" title="Implementing XML Composite Controls">
+                <content>
+                    <VBox id="vbox1" class="sapUiSmallMargin">
+                        <Text id="txt1" text="Standard Text Control" />
+
+                        <custom:HelloCard
+                            id="helloCard"
+                            title="Employee Information"
+                            name="Ben" />
+                    </VBox>
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>

@@ -1,0 +1,36 @@
+<mvc:View
+    controllerName="demo.practice.project.controller.View4"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <App>
+        <pages>
+
+            <Page title="Static Dropdown Example">
+
+                <content>
+                    <VBox class="sapUiSmallMargin" width="300px">
+
+                        <Title text="Select an Option" />
+
+                        <Select
+                            change="onSelectionChange">
+
+                            <items>
+                                <core:Item key="1" text="Apple" xmlns:core="sap.ui.core"/>
+                                <core:Item key="2" text="Banana" xmlns:core="sap.ui.core"/>
+                                <core:Item key="3" text="Mango" xmlns:core="sap.ui.core"/>
+                                <core:Item key="4" text="Orange" xmlns:core="sap.ui.core"/>
+                            </items>
+
+                        </Select>
+
+                    </VBox>
+                </content>
+
+            </Page>
+
+        </pages>
+    </App>
+
+</mvc:View>

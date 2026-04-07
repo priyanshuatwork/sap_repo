@@ -1,0 +1,23 @@
+{
+  "sap.app": {
+    "id": "demo.extend.practice",
+    "type": "application",
+    "title": "Extending Standard Controls"
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "demo.extend.practice.view.View4",
+      "type": "XML",
+      "async": true,
+      "id": "View1"
+    },
+    "dependencies": {
+      "minUI5Version": "1.60.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "flexEnabled": false
+  }
+}

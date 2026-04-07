@@ -1,0 +1,35 @@
+<mvc:View
+    controllerName="demo.extend.practice.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:custom="demo.extend.practice.control"
+    displayBlock="true">
+
+    <App id="app4">
+        <pages>
+            <Page id="page4" title="Extending Standard Controls">
+                <content>
+                    <VBox id="vbox" class="sapUiSmallMargin">
+                        <Text id="txt" text="Standard Button" />
+                        <Button
+                            id="btnNormal"
+                            text="Normal Button"
+                            press="onPressNormal"
+                            class="sapUiSmallMarginBottom" />
+
+                        <Text
+                            id="txt2"
+                            text="Extended Button"
+                            class="sapUiSmallMarginTop" />
+
+                        <custom:CustomButton
+                            id="btnCustom"
+                            text="Extended Button"
+                            highlightColor="green"
+                            press="onPressCustom" />
+                    </VBox>
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>

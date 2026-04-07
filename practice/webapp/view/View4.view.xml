@@ -1,0 +1,30 @@
+<mvc:View
+    controllerName="demo.extend.practice.controller.View4"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:custom="demo.extend.practice.control"
+    displayBlock="true"
+    id="view1">
+
+    <App id="app5">
+        <pages>
+            <Page id="page5" title="Control Library Example">
+                <content>
+                    <VBox id="vbox5" class="sapUiSmallMargin">
+                        <Text id="txtStandard" text="Standard Button" />
+                        <Button id="btnStandard" text="Normal Button" />
+
+                        <Text
+                            id="txtLibrary"
+                            text="Library Button"
+                            class="sapUiSmallMarginTop" />
+
+                        <custom:MyButton
+                            id="btnLibrary"
+                            customText="From Library" />
+                    </VBox>
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>

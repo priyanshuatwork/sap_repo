@@ -1,0 +1,23 @@
+<mvc:View
+    controllerName="demo.practice.project.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <VBox 
+        class="sapUiSmallMargin"
+        justifyContent="Center"
+        alignItems="Center">
+
+        <Title 
+            text="Number Validation" 
+            class="sapUiSmallMarginBottom"/>
+
+        <Input
+            id="numberInput"
+            placeholder="Enter numbers only"
+            liveChange="onLiveChange"
+        />
+
+    </VBox>
+
+</mvc:View>

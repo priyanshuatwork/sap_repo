@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Extending Standard Controls</title>
+
+    <script
+        id="sap-ui-bootstrap"
+        src="https://ui5.sap.com/resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_horizon"
+        data-sap-ui-libs="sap.m"
+        data-sap-ui-async="true"
+        data-sap-ui-compatVersion="edge"
+        data-sap-ui-xx-componentPreload="off"
+        data-sap-ui-resourceroots='{
+            "demo.extend.practice": "./"
+        }'>
+    </script>
+
+    <script>
+        sap.ui.getCore().attachInit(function () {
+            sap.ui.xmlview({
+                viewName: "demo.extend.practice.view.View1"
+            }).placeAt("content");
+        });
+    </script>
+
+    <style>
+        html, body, #content {
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body class="sapUiBody sapUiSizeCompact" id="content"></body>
+</html>
