@@ -1,0 +1,27 @@
+ <mvc:View
+    controllerName="com.demo.niggesh.controller.Login"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <App id="app">
+        <Page id="loginPage" title="Login Form Integration Test">
+            <content>
+                <VBox class="sapUiMediumMargin" width="20rem">
+                    <Label text="User ID" />
+                    <Input id="userInput" placeholder="Enter user" />
+
+                    <Label text="Password" class="sapUiSmallMarginTop" />
+                    <Input id="passwordInput" type="Password" placeholder="Enter password" />
+
+                    <Button
+                        id="loginButton"
+                        class="sapUiSmallMarginTop"
+                        text="Login"
+                        press=".onLogin" />
+
+                    <Text id="resultText" class="sapUiSmallMarginTop" text="" />
+                </VBox>
+            </content>
+        </Page>
+    </App>
+</mvc:View>

@@ -1,0 +1,27 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:demo="com.demo.blackrock.controls">
+
+    <VBox class="sapUiSmallMargin sapUiSmallPadding demoCoReqCard">
+
+        <Title text="Requisition {$this>reqId}" level="H4" />
+
+        <Text text="Supplier: {$this>supplier}" />
+
+        <Text text="Amount: {$this>amount}" />
+
+        <Text text="{= ${$this>contractAvailable} ? 'Contract Available' : 'No Contract'}"/>
+
+        <demo:RiskIndicator
+            score="{$this>riskScore}"
+            label="Supplier Risk"
+            threshold="70" />
+
+        <demo:ApproveButton
+    text="Approve"
+    budgetExceeded="{$this>budgetExceeded}"
+    approvalAccepted="._onApproveAccepted"
+    approvalRejected="._onApproveRejected"/>
+    </VBox>
+</core:FragmentDefinition>

@@ -1,0 +1,27 @@
+<mvc:View
+    controllerName="com.demo.blackrock.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:demo="com.demo.blackrock.controls">
+<App>
+    <Page title="Purchase Requisition Approval">
+        <content>
+    <demo:RequisitionCard
+    reqId="REQ-1001"
+    supplier="ABC Ltd"
+    amount="5000"
+    riskScore="45"
+    contractAvailable="true"
+    budgetExceeded="false"/>
+
+    <demo:RequisitionCard
+    reqId="REQ-1001"
+    supplier="ABC Ltd"
+    amount="5000"
+    riskScore="45"
+    contractAvailable="true"
+    budgetExceeded="false"/>
+        </content>
+    </Page>
+</App>
+</mvc:View>

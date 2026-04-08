@@ -1,0 +1,21 @@
+{
+  "sap.app": {
+    "id": "com.demo.niggesh",
+    "type": "application",
+    "title": "Login OPA5 App"
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {}
+      }
+    },
+    "rootView": {
+      "viewName": "com.demo.niggesh.view.Login",
+      "type": "XML",
+      "async": true,
+      "id": "loginView"
+    }
+  }
+}

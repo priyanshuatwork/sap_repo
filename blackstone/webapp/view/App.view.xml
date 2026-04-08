@@ -1,0 +1,69 @@
+<mvc:View controllerName="com.demo.blackstone.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+<App>
+    <Page title="Purchase Requisition">
+        <content>
+            <VBox class="sapUiSmallMargin">
+
+                <f:SimpleForm
+                    id="prForm"
+                    editable="true"
+                    layout="ResponsiveGridLayout"
+                    title="Create Purchase Requisition">
+
+                    <Label text="PR Number" />
+                    <Input id="inpBanfn" placeholder="Enter PR Number" />
+
+                    <Label text="Description" />
+                    <Input id="inpTxz01" placeholder="Enter Description" />
+
+                    <Label text="Quantity" />
+                    <Input id="inpMenge" type="Number" placeholder="Enter Quantity" />
+
+                    <Label text="Plant" />
+                    <Input id="inpWerks" placeholder="Enter Plant" />
+
+                    <Button
+                        text="Save"
+                        type="Emphasized"
+                        press=".onSave" />
+                </f:SimpleForm>
+
+                <Table
+                    id="prTable"
+                    headerText="Purchase Requisition List"
+                    items="{/PRSet}">
+                    <columns>
+                        <Column>
+                            <Text text="PR Number" />
+                        </Column>
+                        <Column>
+                            <Text text="Description" />
+                        </Column>
+                        <Column>
+                            <Text text="Quantity" />
+                        </Column>
+                        <Column>
+                            <Text text="Plant" />
+                        </Column>
+                    </columns>
+
+                    <items>
+                        <ColumnListItem>
+                            <cells>
+                                <Text text="{Banfn}" />
+                                <Text text="{Txz01}" />
+                                <Text text="{Menge}" />
+                                <Text text="{Werks}" />
+                            </cells>
+                        </ColumnListItem>
+                    </items>
+                </Table>
+
+            </VBox>
+        </content>
+    </Page>
+</App>
+</mvc:View>

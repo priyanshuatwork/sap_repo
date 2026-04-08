@@ -1,0 +1,38 @@
+{
+  "sap.app": {
+    "id": "com.demo.blackstone",
+    "type": "application",
+    "title": "Simple PR Mock",
+    "dataSources": {
+      "mainService": {
+        "uri": "/sap/opu/odata/sap/ZPR_SRV/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0",
+          "localUri": "localservice/metadata.xml"
+        }
+      }
+    }
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "com.demo.blackstone.view.App",
+      "type": "XML",
+      "async": true
+    },
+    "dependencies": {
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "models": {
+      "": {
+        "dataSource": "mainService",
+        "settings": {
+          "useBatch": false
+        }
+      }
+    }
+  }
+}
