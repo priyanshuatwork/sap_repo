@@ -1,14 +1,61 @@
 {
-  "name": "REQUISITION-APP",
+  "name": "requisition-app",
   "version": "1.0.0",
+  "private": true,
   "dependencies": {
-    "@sap/cds": "^9"
+    "@sap/cds": "^9.8.5"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^2"
+    "@sap/cds-dk": "^9.8.4",
+    "@cap-js/sqlite": "^2.2.0",
+    "cds-plugin-ui5": "^0.13.6"
   },
+  "cds": {
+    "requires": {
+      "auth": {
+        "kind": "mocked",
+        "users": {
+          "alice": {
+            "name": "alice",
+            "password": "sanjiva",
+            "roles": [
+              "authenticated-user",
+              "Developer"
+            ]
+          },
+          "bob": {
+            "name": "bob",
+            "password": "bennur",
+            "roles": [
+              "authenticated-user",
+              "Manager"
+            ]
+          },
+          "*": {
+            "roles": [
+              "authenticated-user",
+              "Developer",
+              "Manager"
+            ]
+          }
+        }
+      },
+      "db": {
+        "kind": "sqlite",
+        "impl": "@cap-js/sqlite",
+        "credentials": {
+          "url": "requisition.db"
+        }
+      }
+    }
+  },
+  "workspaces": [
+    "app/*"
+  ],
   "scripts": {
-    "start": "cds-serve"
+    "watch-requisitionapp": "cds watch --open com.demo.requisitionapp/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
-  "private": true
+  "sapux": [
+    "app/requisitionapp"
+  ]
 }

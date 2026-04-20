@@ -1,0 +1,12 @@
+<mvc:View controllerName="com.demo.busy.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+
+        <content>
+            <VBox class="sapUiSmallMargin">
+                <Button id="busyBtn" text="Submit" press=".onPressBusyButton"/>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
