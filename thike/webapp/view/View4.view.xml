@@ -1,0 +1,25 @@
+<mvc:View controllerName="demo.bhithike.thike.controller.View4"
+  xmlns:core="sap.ui.core"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:l="sap.ui.layout">
+
+  <VBox class="sapUiSmallMargin" width="22rem">
+    <Title text="Margin &amp; Padding Example " class="sapUiSmallMarginBottom"/>
+    <Panel headerText="Form Section" class="sapUiSmallMarginBottom">
+      <content>
+        <VBox class="sapUiSmallMarginBottom">
+          <Text text="Kuch toh form ki baatein chal rhi"/>
+
+          <Input placeholder="First name" class="sapUiSmallMarginBottom"/>
+          <Input placeholder="Last name" class="sapUiSmallMarginBottom"/>
+          <Button  text="Submit" type="Emphasized" class="sapUiSmallMarginTop" />
+        </VBox>
+      </content>
+    </Panel>
+  </VBox>
+
+
+
+
+</mvc:View>

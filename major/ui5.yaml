@@ -1,0 +1,5 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.jsons
+specVersion: "3.0"
+metadata:
+  name: demo.minor.major
+type: application

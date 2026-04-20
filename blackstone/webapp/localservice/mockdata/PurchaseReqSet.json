@@ -1,0 +1,16 @@
+{
+    "PurchaseReqSet": [
+      {
+        "Banfn": "100000001",
+        "Txz01": "Laptop",
+        "Menge": "5",
+        "Werks": "1000"
+      },
+      {
+        "Banfn": "100000002",
+        "Txz01": "Mouse",
+        "Menge": "10",
+        "Werks": "1000"
+      }
+    ]
+  }

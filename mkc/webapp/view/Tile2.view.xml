@@ -1,0 +1,12 @@
+<mvc:View 
+    controllerName="com.demo.mkc.controller.Tile2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    
+    <Page title="Tile 2 Page">
+        <content>
+            <Text text="Welcome to Tile 2 Page"/>
+        </content>
+    </Page>
+
+</mvc:View>

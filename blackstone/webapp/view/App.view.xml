@@ -7,8 +7,8 @@
         <content>
             <VBox class="sapUiSmallMargin">
 
+                <!-- CREATE FORM -->
                 <f:SimpleForm
-                    id="prForm"
                     editable="true"
                     layout="ResponsiveGridLayout"
                     title="Create Purchase Requisition">
@@ -26,28 +26,21 @@
                     <Input id="inpWerks" placeholder="Enter Plant" />
 
                     <Button
-                        text="Save"
+                        text="Create PR"
                         type="Emphasized"
                         press=".onSave" />
                 </f:SimpleForm>
 
+                <!-- LIST TABLE -->
                 <Table
                     id="prTable"
                     headerText="Purchase Requisition List"
-                    items="{/PRSet}">
+                    items="{/PurchaseReqSet}">
                     <columns>
-                        <Column>
-                            <Text text="PR Number" />
-                        </Column>
-                        <Column>
-                            <Text text="Description" />
-                        </Column>
-                        <Column>
-                            <Text text="Quantity" />
-                        </Column>
-                        <Column>
-                            <Text text="Plant" />
-                        </Column>
+                        <Column><Text text="PR Number" /></Column>
+                        <Column><Text text="Description" /></Column>
+                        <Column><Text text="Quantity" /></Column>
+                        <Column><Text text="Plant" /></Column>
                     </columns>
 
                     <items>

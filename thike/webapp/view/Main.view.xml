@@ -1,0 +1,26 @@
+<mvc:View controllerName="demo.bhithike.thike.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+  <App >
+    <pages>
+    <VBox class="sapUiSmallMargin" width="100%" alignItems="Center" justifyContent="Center">
+
+        <Title text="Vbox/Hbox alignment karenge isme toh" class="sapUiSmallMargin"/>
+
+        <HBox width ="100%" justifyContent="SpaceAround" alignItems="Center" class="sapUiSmallMarginBottom">
+            <Button text="left"/>
+            <Button text="center"/>
+            <Button text="right"/>
+        </HBox>
+
+
+        <VBox width ="100%" justifyContent="SpaceBetween" alignItems="Center" class="sapUiSmallMarginBottom">
+            <Text text="Centered Content"/>
+            <Button text="action"/>
+
+        </VBox>
+    </VBox>
+ 
+    </pages>
+ </App >
+</mvc:View>

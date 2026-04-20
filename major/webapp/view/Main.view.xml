@@ -1,0 +1,43 @@
+<mvc:View
+  controllerName="demo.minor.major.controller.Main"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+<App >
+  <Page id="mainPage" title="{i18n>appTitle}">
+    <content>
+      <VBox class="sapUiSmallMargin">
+        <Title text="Flight List" level="H2" class="sapUiSmallMarginBottom"/>
+
+        <Table
+          id="flightTable"
+          items="{flights>/flights}"
+          mode="SingleSelectMaster"
+          selectionChange="onSelectFlight">
+
+          <columns>
+            <Column>
+              <Text text="Carrier"/>
+            </Column>
+            <Column>
+              <Text text="Connection"/>
+            </Column>
+            <Column>
+              <Text text="Country"/>
+            </Column>
+          </columns>
+
+          <items>
+            <ColumnListItem>
+              <cells>
+                <Text text="{flights>carrier}"/>
+                <Text text="{flights>connection}"/>
+                <Text text="{flights>country}"/>
+              </cells>
+            </ColumnListItem>
+          </items>
+        </Table>
+      </VBox>
+    </content>
+  </Page>
+</App>
+</mvc:View>

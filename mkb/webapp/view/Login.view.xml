@@ -1,0 +1,64 @@
+<mvc:View controllerName="com.demo.mkb.controller.Login"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+<Page title="Login Form">
+
+<content>
+
+<VBox width="20rem" class="sapUiMediumMargin">
+
+<Label text="User Name"/>
+
+<Input
+id="nameInput"
+value="{/name}"
+placeholder="Enter Username"
+liveChange="onLiveChange"
+/>
+
+<Label text="Password" class="sapUiSmallMarginTop"/>
+
+<Input
+id="passInput"
+type="Password"
+value="{/pass}"
+placeholder="Enter Password"
+liveChange="onLiveChange"
+showValueHelp="true"
+valueHelpIconSrc="sap-icon://show"
+valueHelpRequest="onTogglePassword"
+/>
+
+<HBox class="sapUiSmallMarginTop">
+
+<Button
+id="loginButton"
+text="Submit"
+type="Accept"
+press="onLogin"
+/>
+
+<Button
+id="CancelButton"
+text="Cancel"
+type="Reject"
+press="onCancel"
+class="sapUiTinyMarginBegin"
+/>
+
+</HBox>
+
+<Text
+id="resultText"
+class="sapUiSmallMarginTop"
+text=""
+/>
+
+</VBox>
+
+</content>
+
+</Page>
+
+</mvc:View>

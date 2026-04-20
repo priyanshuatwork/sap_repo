@@ -15,7 +15,7 @@ sap.ui.define([
       });
 
       oMockServer.simulate("../localservice/metadata.xml", {
-        sMockdataBaseUrl: "../localservice/mockdata/PRSet.json",
+        sMockdataBaseUrl: "../localservice/mockdata/PurchaseReqSet.json",
         bGenerateMissingMockData: true
       });
 

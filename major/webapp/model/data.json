@@ -1,0 +1,21 @@
+{
+  "flights": [
+    {
+      "carrier": "LH",
+      "connection": "0400",
+      "country": "Germany"
+    },
+    {
+      "carrier": "EK",
+      "connection": "0507",
+      "country": "UAE"
+    },
+    {
+      "carrier": "AI",
+      "connection": "2021",
+
+
+      "country": "India"
+    }
+  ]
+}

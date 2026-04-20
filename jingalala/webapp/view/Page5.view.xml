@@ -1,0 +1,14 @@
+<mvc:View
+    controllerName="demo.routing.jingalala.controller.Page5"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page title="Page 5" showNavButton="true" navButtonPress="onBack">
+        <content>
+            <VBox class="sapUiSmallMargin" width="20rem">
+                <Title text="Routing Demo - Page 5" class="sapUiSmallMarginBottom" />
+                <Button text="Go to Page 1" type="Emphasized" press="onGoToPage1" />
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

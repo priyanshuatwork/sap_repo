@@ -1,0 +1,12 @@
+
+{
+  "name": "ux402_fullscreen_demo",
+  "version": "1.0.0",
+  "description": "SAPUI5 Fullscreen Demo for UX402",
+  "scripts": {
+    "start": "ui5 serve -o index.html"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^3.11.0"
+  }
+}

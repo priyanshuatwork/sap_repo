@@ -1,0 +1,98 @@
+<mvc:View
+  controllerName="com.demo.appusinglogon.controller.Main"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+
+  <Page title="Registration CRUD">
+    <content>
+
+      <!-- Table -->
+      <Table
+        id="regTable"
+        items="{/RegistrationSet}"
+        mode="SingleSelectLeft"
+        selectionChange="onSelectionChange">
+
+        <columns>
+          <Column><Text text="ID"/></Column>
+          <Column><Text text="First Name"/></Column>
+          <Column><Text text="Last Name"/></Column>
+          <Column><Text text="Age"/></Column>
+          <Column><Text text="Gender"/></Column>
+        </columns>
+
+        <items>
+          <ColumnListItem>
+            <cells>
+              <Text text="{RegId}"/>
+              <Text text="{FirstName}"/>
+              <Text text="{Surname}"/>
+              <Text text="{Age}"/>
+              <Text text="{Gender}"/>
+            </cells>
+          </ColumnListItem>
+        </items>
+      </Table>
+
+      <!-- Buttons -->
+      <HBox justifyContent="SpaceBetween" class="sapUiSmallMarginTop">
+
+        <Button text="Refresh" press="onRefresh"/>
+
+        <Button text="Create" press="onCreate"/>
+
+        <!-- Disabled until row selected -->
+        <Button id="btnDelete" text="Delete" press="onDelete" enabled="false"/>
+        <Button id="btnUpdate" text="Update" press="onUpdate" enabled="false"/>
+
+      </HBox>
+
+      <!-- CREATE DIALOG -->
+      <Dialog id="createDialog" title="Create Registration">
+        <VBox class="sapUiSmallMargin">
+
+          <Input id="inpRegId" placeholder="Reg ID"/>
+          <Input id="inpFirstName" placeholder="First Name"/>
+          <Input id="inpMiddleName" placeholder="Middle Name"/>
+          <Input id="inpSurname" placeholder="Surname"/>
+          <Input id="inpAge" placeholder="Age" type="Number"/>
+          <Input id="inpGender" placeholder="Gender (M/F)"/>
+          <Input id="inpAddress" placeholder="Address"/>
+
+        </VBox>
+
+        <beginButton>
+          <Button text="Create" press="onSubmitCreate"/>
+        </beginButton>
+
+        <endButton>
+          <Button text="Cancel" press="onCancelCreate"/>
+        </endButton>
+      </Dialog>
+
+      <!-- UPDATE DIALOG -->
+      <Dialog id="updateDialog" title="Update Registration">
+        <VBox class="sapUiSmallMargin">
+
+          <Input id="updRegId" editable="false"/>
+          <Input id="updFirstName"/>
+          <Input id="updMiddleName"/>
+          <Input id="updSurname"/>
+          <Input id="updAge" type="Number"/>
+          <Input id="updGender"/>
+          <Input id="updAddress"/>
+
+        </VBox>
+
+        <beginButton>
+          <Button text="Update" press="onSubmitUpdate"/>
+        </beginButton>
+
+        <endButton>
+          <Button text="Cancel" press="onCancelUpdate"/>
+        </endButton>
+      </Dialog>
+
+    </content>
+  </Page>
+</mvc:View>

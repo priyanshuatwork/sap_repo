@@ -1,0 +1,33 @@
+<mvc:View controllerName="demo.bhithike.thike.controller.View1"
+xmlns:core="sap.ui.core"
+xmlns:mvc="sap.ui.core.mvc" 
+xmlns="sap.m"
+xmlns:l="sap.ui.layout"
+>
+
+    <VBox class="sapUiSmallMargin" >
+      <Title text="Responsive layout using flexBox" class="sapUiSmallMarginBottom"></Title> 
+
+      <l:ResponsiveFlowLayout >
+        <Panel headerText="Box 1" width="18rem" class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
+          <content>
+            <Text text="First responsive box"></Text>
+          </content>
+        </Panel>
+        <Panel headerText="Box 2" width="18rem" class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
+          <content>
+            <Text text="second responsive box"></Text>
+          </content>
+        </Panel>
+        <Panel headerText="Box 3" width="18rem" class="sapUiSmallMarginEnd sapUiSmallMarginBottom">
+          <content>
+            <Text text="third responsive box"></Text>
+          </content>
+        </Panel>
+      </l:ResponsiveFlowLayout>
+
+    </VBox>
+
+
+
+</mvc:View>

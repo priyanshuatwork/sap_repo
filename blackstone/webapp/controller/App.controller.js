@@ -7,6 +7,7 @@ sap.ui.define([
     return Controller.extend("com.demo.blackstone.controller.App", {
 
         onSave: function () {
+            var that = this;
             var oModel = this.getView().getModel();
 
             var oData = {
@@ -16,13 +17,19 @@ sap.ui.define([
                 Werks: this.byId("inpWerks").getValue()
             };
 
-            oModel.create("/PRSet", oData, {
+            oModel.create("/PurchaseReqSet", oData, {
                 success: function () {
-                    MessageToast.show("PR Created Successfully");
+                    MessageToast.show("Purchase Requisition Created");
                     oModel.refresh(true);
+
+                    // clear form
+                    that.byId("inpBanfn").setValue("");
+                    that.byId("inpTxz01").setValue("");
+                    that.byId("inpMenge").setValue("");
+                    that.byId("inpWerks").setValue("");
                 },
                 error: function () {
-                    MessageToast.show("Error while creating PR");
+                    MessageToast.show("Error creating PR");
                 }
             });
         }

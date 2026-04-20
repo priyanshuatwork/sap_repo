@@ -1,0 +1,50 @@
+<mvc:View
+    controllerName="com.demo.yeahwalav4.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page title="Inventory Management">
+
+        <headerContent>
+            <Button text="Create" press="onCreate"/>
+            <Button text="Delete" press="onDelete"/>
+            <Button text="Refresh" press="onRefresh"/>
+        </headerContent>
+
+        <content>
+
+            <Table
+                id="inventoryTable"
+                mode="SingleSelectLeft"
+                items="{ path: '/Inventory' }">
+
+                <columns>
+                    <Column><Text text="Item ID"/></Column>
+                    <Column><Text text="Product Name"/></Column>
+                    <Column><Text text="Price"/></Column>
+                    <Column><Text text="Stock"/></Column>
+                    <Column><Text text="Warehouse"/></Column>
+                    <Column><Text text="Plant"/></Column>
+                    <Column><Text text="Asset Code"/></Column>
+                </columns>
+
+                <items>
+                    <ColumnListItem type="Active" press="onUpdate">
+                        <cells>
+                            <Text text="{ItemId}"/>
+                            <Text text="{ProductName}"/>
+                            <Text text="{ProductPrice}"/>
+                            <Text text="{InStock}"/>
+                            <Text text="{WarehouseLoc}"/>
+                            <Text text="{PlantLoc}"/>
+                            <Text text="{AssetCode}"/>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+
+            </Table>
+
+        </content>
+    </Page>
+
+</mvc:View>

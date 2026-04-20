@@ -1,0 +1,30 @@
+<mvc:View controllerName="demo.bhithike.thike.controller.View3"
+  xmlns:core="sap.ui.core"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:l="sap.ui.layout">
+ 
+  <VBox class="sapUiSmallMargin" width="22rem">
+    <Title text="Expand/Collapse Panel" class="sapUiSmallMarginBottom"/>
+    <Panel 
+    id="myPanel"
+    headerText="User Details"
+    expandable="true"
+    expanded="{/isExpanded}"
+    expand="onToggle">
+    <content>
+    <VBox  class="sapUiSmallMarginBottom">
+      <Text text="CHidden text box ayega dekhna sahi se"/>
+      
+      <Input placeholder="add your name"/>
+      <Input placeholder="add your email"   class="sapUiSmallMarginTop"/>
+
+    </VBox>
+    </content> 
+    </Panel>
+  </VBox>
+ 
+
+
+
+</mvc:View>

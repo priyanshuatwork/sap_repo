@@ -1,0 +1,95 @@
+{
+  "_version": "1.83.0",
+  "sap.app": {
+    "id": "demo.routing.jingalala",
+    "type": "application",
+    "title": "Routing Demo",
+    "applicationVersion": {
+      "version": "1.0.0"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": false,
+    "rootView": {
+      "viewName": "demo.routing.jingalala.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    },
+    "dependencies": {
+      "minUI5Version": "1.120.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlId": "app",
+        "controlAggregation": "pages",
+        "type": "View",
+        "viewType": "XML",
+        "path": "demo.routing.jingalala.view",
+        "async": true
+      },
+      "routes": [
+        {
+          "name": "RoutePage1",
+          "pattern": "",
+          "target": "TargetPage1"
+        },
+        {
+          "name": "RoutePage2",
+          "pattern": "page2",
+          "target": "TargetPage2"
+        },
+        {
+          "name": "RoutePage3",
+          "pattern": "page3",
+          "target": "TargetPage3"
+        },
+        {
+          "name": "RoutePage4",
+          "pattern": "page4",
+          "target": "TargetPage4"
+        },
+        {
+          "name": "RoutePage5",
+          "pattern": "page5",
+          "target": "TargetPage5"
+        }
+      ],
+      "targets": {
+        "TargetPage1": {
+          "id": "Main",
+          "name": "Main"
+        },
+        "TargetPage2": {
+          "id": "Page2",
+          "name": "Page2"
+        },
+        "TargetPage3": {
+          "id": "Page3",
+          "name": "Page3"
+        },
+        "TargetPage4": {
+          "id": "Page4",
+          "name": "Page4"
+        },
+        "TargetPage5": {
+          "id": "Page5",
+          "name": "Page5"
+        }
+      }
+    }
+  }
+}

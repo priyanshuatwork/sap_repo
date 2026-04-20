@@ -1,0 +1,13 @@
+<mvc:View
+    controllerName="demo.bhithike.thike.controller.View6"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout">
+
+    <VBox class="sapUiSmallMargin" width="20rem">
+        <Title text="Load XML fragment guyzis" class="sapUiSmallMarginBottom"/>
+        <Button text="Open Fragment" type="Emphasized" press="onOpenFragment"/>
+    </VBox>
+
+</mvc:View>

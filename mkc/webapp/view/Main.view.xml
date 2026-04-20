@@ -1,0 +1,74 @@
+<mvc:View controllerName="com.demo.mkc.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:unified="sap.ui.unified">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <HBox class="sapUiSmallMargin">
+                <GenericTile header="Employees" subheader="Total Count" press="onTilePress" class="sapUiSmallMargin">
+                    <tileContent>
+                        <TileContent>
+                            <content>
+                                <NumericContent value="150" scale="" valueColor="Good"/>
+
+                            </content>
+                        </TileContent>
+                    </tileContent>
+
+                </GenericTile>
+                <GenericTile header="Inventory Waste" subheader="In metric Tons" press="onTilePress2" class="sapUiSmallMargin">
+                    <tileContent>
+                        <TileContent>
+                            <content>
+                                <NumericContent value="12" scale="" valueColor="Good"/>
+
+                            </content>
+                        </TileContent>
+                    </tileContent>
+
+                </GenericTile>
+                <GenericTile header="Margin Losses" subheader="In percentage" press="onTilePress3" class="sapUiSmallMargin">
+                    <tileContent>
+                        <TileContent>
+                            <content>
+                                <NumericContent value="8" scale="" valueColor="Good"/>
+
+                            </content>
+                        </TileContent>
+                    </tileContent>
+
+                </GenericTile>
+                <GenericTile header="Growth" subheader="In percentage" press="onTilePress4" class="sapUiSmallMargin">
+                    <tileContent>
+                        <TileContent>
+                            <content>
+                                <NumericContent value="22" scale="" valueColor="Good"/>
+
+                            </content>
+                        </TileContent>
+                    </tileContent>
+
+                </GenericTile>
+                <GenericTile header="Margin " subheader="In Percentage" press="onTilePress5" class="sapUiSmallMargin">
+                    <tileContent>
+                        <TileContent>
+                            <content>
+                                <NumericContent value="2.9" scale="" valueColor="Good"/>
+
+                            </content>
+                        </TileContent>
+                    </tileContent>
+
+                </GenericTile>
+            </HBox>
+             <VBox class="sapUiSmallMargin">
+
+                <unified:FileUploader id="fileUploader" width="300px" placeholder="Choose  a file" change="onFileChange" />
+
+                <Button text="Upload" press="onUpload"/>
+
+                <Button text="Download Dummy File" press="onDownload"/>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

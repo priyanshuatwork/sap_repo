@@ -1,0 +1,32 @@
+<mvc:View controllerName="demo.bhithike.thike.controller.View5"
+  xmlns:core="sap.ui.core"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:l="sap.ui.layout">
+
+  <VBox class="sapUiSmallMargin" width="22rem">
+    <Title text="Sctoll Container Demo hai bhai " class="sapUiSmallMarginBottom"/>
+    <ScrollContainer height="200px" width="100%" vertical="true" horizontal="false" class="sapUiBorder">
+
+      <VBox class="sapUiSmallMargin">
+        <Text text="Item 1" class="sapUiSmallMarginBottom"/>
+        <Text text="Item 2" class="sapUiSmallMarginBottom"/>
+        <Text text="Item 3" class="sapUiSmallMarginBottom"/>
+        <Text text="Item 4" class="sapUiSmallMarginBottom"/>
+        <Text text="Item 5" class="sapUiSmallMarginBottom"/>
+        <Text text="Item 6" class="sapUiSmallMarginBottom"/>
+        <Text text="Item 7" class="sapUiSmallMarginBottom"/>
+        <Text text="Item 8" class="sapUiSmallMarginBottom"/>
+        <Text text="Item 9" class="sapUiSmallMarginBottom"/>
+        <Text text="Item 10" class="sapUiSmallMarginBottom"/>
+        <Text text="Item 11" class="sapUiSmallMarginBottom"/>
+        <Text text="Item 12" class="sapUiSmallMarginBottom"/>
+        <Text text="Item 13" class="sapUiSmallMarginBottom"/>
+      </VBox>
+    </ScrollContainer>
+  </VBox>
+
+
+
+
+</mvc:View>
